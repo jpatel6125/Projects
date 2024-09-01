@@ -60,9 +60,9 @@
 
 @media only screen and (max-width: 870px) {
     .navbar {
+        max-width: 100%;
         justify-content: flex-end;
         padding-right: 20px; 
-        width: 100%;
         overflow-x: hidden;
     }
     
@@ -78,13 +78,12 @@
     }
 
     .after-nav {
-        width: auto;
         display: flex;
         color: white;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        margin-right: 35%;
+        padding-right: 35%;
         cursor: pointer;
     }
 }
@@ -170,7 +169,7 @@
     background-color: white;
 }
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 768px) {
     .main-slide {
         width: 100%;
     }
@@ -209,7 +208,9 @@
 }
 
 #heading-15 {
-    left: 40%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
     position: absolute;
     font-size: 60px;
     font-family: "Inter", sans-serif;
@@ -220,7 +221,9 @@
 
 .sub-info-15 {
     position: absolute;
-    left: 38%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
     margin-top: 70px;;
     font-size: 26px;
     font-family: "Inter", sans-serif;
@@ -237,11 +240,11 @@
 
 .iphone-buttons {
     position: absolute;
+    width: 100%;
     display: flex;
     text-align: center;
     justify-content: center;
     margin-top: 120px;
-    left: 43%;
     gap: 20px;
 }
 
@@ -277,20 +280,18 @@
     color: white;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     #heading-15 {
-        left: 20%;
-        font-size: 50px;
+        text-align: center;
+        font-size: 45px;
     }
 
     .sub-info-15 {
-        left: 15%;
         font-size: 20px;
     }
 
     .iphone-buttons {
         margin-top: 30%;
-        left: 25%;
     }
 }
 
@@ -674,6 +675,10 @@ footer {
     .footer h3 {
         font-size: 10px;
     }
+
+    .footer-column ul li a {
+        font-size: 10px;
+    }
 }
 
 /* Existing styles remain the same */
@@ -709,7 +714,7 @@ footer {
     }
 
     /* iPhone section adjustments */
-    #heading-15 {
+    /* #heading-15 {
         left: 30%;
         font-size: 50px;
     }
@@ -717,7 +722,7 @@ footer {
     .sub-info-15 {
         left: 25%;
         font-size: 22px;
-    }
+    } */
 
     .iphone-buttons {
         left: 35%;
