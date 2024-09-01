@@ -1,0 +1,766 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(81, 81, 81);
+    gap: 40px;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+    opacity: 0.9;
+    flex-wrap: nowrap;
+    object-fit: cover;
+    max-width: 100%;
+    align-items: center;
+}
+
+
+.navbar a {
+    display: flex;
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    flex-shrink: 1;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.after-nav {
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: none;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 870px) {
+    .navbar {
+        justify-content: flex-end;
+        padding-right: 20px; 
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .navbar a {
+        display: none; /* Hide links */
+    }
+    
+    .navbar::after {
+        content: "\2630"; /* Unicode for hamburger menu */
+        font-size: 24px;
+        color: rgb(228, 228, 228);
+        cursor: pointer;
+    }
+
+    .after-nav {
+        width: auto;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-right: 35%;
+        cursor: pointer;
+    }
+}
+
+/* Tablet view: Center-aligned and shrinkable links */
+@media only screen and (min-width: 871px) and (max-width: 1024px) {
+    .navbar {
+        justify-content: center; /* Center-align for tablets */
+        gap: 10px; /* Reduce the gap between items */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+    }
+    
+    .navbar a {
+        flex-shrink: 2; /* Allow the links to shrink to fit */
+        min-width: 50px; /* Set a minimum width to keep the links readable */
+    }
+}
+
+
+.main-slide {
+    height: 710px;
+    width: 100%;
+    justify-content: center;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.relay {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+#the-relay {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 6vw;
+    font-size: 60px;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.sub-relay {
+    position: absolute;
+    margin-top: 11vw;
+    /* margin-left: 36%; */
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
+}
+
+.para-image img {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#watch-the-film {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 30%;
+    left: 45%;
+    background-color: rgb(248, 247, 245);
+    color: black;
+    height: 43px;
+    width: 150px;
+    border: none;
+    border-radius: 35px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#watch-the-film:hover {
+    background-color: white;
+}
+
+@media only screen and (max-width: 870px) {
+    .main-slide {
+        width: 100%;
+    }
+
+    #the-relay {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        font-size: 50px;
+        margin-top: 15vw;
+    }
+
+    .sub-relay {
+        font-size: 20px;
+        margin-top: 30vw;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #watch-the-film {
+        left: 35%;
+        margin-top: 3vw;
+        width: 150px;
+        
+    }
+}
+
+
+.iphone {
+    padding-top: 60px;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+#heading-15 {
+    left: 40%;
+    position: absolute;
+    font-size: 60px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.sub-info-15 {
+    position: absolute;
+    left: 38%;
+    margin-top: 70px;;
+    font-size: 26px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.iphone img {
+    height: 650px;
+    width: 100%;
+}
+
+
+.iphone-buttons {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 120px;
+    left: 43%;
+    gap: 20px;
+}
+
+#learn-more {
+    height: 45px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: rgb(23, 89, 233);
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#learn-more:hover {
+    background-color: rgb(28, 100, 255);
+}
+
+#buy {
+    height: 45px;
+    width: 90px;
+    border-radius: 30px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(46, 104, 231);
+    font-size: 16px;
+    border: none;
+    border: 2px solid rgb(46, 104, 231);
+    cursor: pointer;
+}
+
+#buy:hover {
+    background-color: rgb(23, 89, 233);
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    #heading-15 {
+        left: 20%;
+        font-size: 50px;
+    }
+
+    .sub-info-15 {
+        left: 15%;
+        font-size: 20px;
+    }
+
+    .iphone-buttons {
+        margin-top: 30%;
+        left: 25%;
+    }
+}
+
+.products {
+    position: relative;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    row-gap: 10px;
+    margin-left: 10px;
+    column-gap: 10px;
+}
+
+.products img {
+    position: relative;
+    height: 600px;
+    width: 825px;
+    object-fit: cover;
+}
+
+.products .pr1-caption, .pr2-caption, .pr3-caption, .pr6-caption{
+    width: 50%;
+    margin-top: 15px;
+    position: absolute;
+    text-align: center;
+    z-index: 100;
+    font-size: 50px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.products .pr1-subcaption, .pr2-subcaption, .pr3-subcaption, .pr5-subcaption, .pr6-subcaption {
+    width: 50%;
+    margin-top: 75px;
+    position: absolute;
+    text-align: center;
+    z-index: 100;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.products .pr1-buttons, .pr2-buttons, .pr5-buttons, .pr6-buttons{
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+    margin-top: 110px;
+}
+
+.products .pr1-buttons button, .pr2-buttons button, .pr4-buttons button, .pr5-buttons button, .pr6-buttons button{
+    height: 35px;
+    width: auto;
+    margin: 7px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#pr1-1, #pr2-1, #pr3-1, #pr4-1 {
+    width: 110px;
+    color: white;
+    background-color: rgb(23, 89, 233);
+    font-size: 14px;
+}
+
+#pr1-1:hover, #pr2-1:hover, #pr3-1:hover, #pr4-1:hover, #pr6-1:hover {
+    background-color: rgb(46, 104, 231);
+}
+
+#pr1-2, #pr2-2{
+    width: 70px;
+    color: rgb(23, 89, 233);
+    background-color: #f5f5f7;
+    font-size: 14px;
+    border: 1px solid rgb(23, 89, 233);
+}
+
+#pr1-2:hover, #pr2-2:hover, #pr3-2:hover, #pr4-2:hover {
+    color: white;
+    background-color: rgb(23, 89, 233);
+}
+
+.products .pr3-supersubcaption {
+    font-size: 16px;
+    color: rgb(94, 94, 94);
+    margin-top: 110px;
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    z-index: 100;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.products .pr3-buttons{
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+    margin-top: 140px;
+}
+
+.products .pr3-buttons button{
+    height: 35px;
+    width: auto;
+    margin: 7px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#pr3-2 {
+    width: 120px;
+    color: rgb(23, 89, 233);
+    background-color: #f5f5f7;
+    font-size: 14px;
+    border: 1px solid rgb(23, 89, 233);
+}
+
+.products .pr4-caption{
+    width: 50%;
+    margin-top: 15px;
+    position: absolute;
+    text-align: center;
+    z-index: 100;
+    font-size: 50px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+}
+
+.products .pr4-subcaption {
+    width: 50%;
+    margin-top: 100px;
+    position: absolute;
+    text-align: center;
+    z-index: 100;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.products .pr4-supersubcaption {
+    font-size: 14px;
+    color: red;
+    margin-top: 75px;
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    z-index: 100;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.products .pr4-buttons{
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+    margin-top: 140px;
+}
+
+#pr4-2{
+    width: 70px;
+    color: rgb(43, 105, 237);
+    background-color: #000000;
+    font-size: 14px;
+    border: 1px solid rgb(43, 105, 237);
+}
+
+.products .pr5-caption{
+    display: flex;
+    width: 50%;
+    height: 45px;
+    margin-top: 20px;
+    /* margin-left: 18vw; */
+    position: absolute;
+    z-index: 100;
+    justify-content: center;
+}
+
+.products .pr5-caption img{
+    max-height: 100%;
+    width: 200px;
+    text-align: center;
+}
+
+#pr5-1 {
+    width: 110px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+#pr5-1:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+#pr5-2 {
+    width: 70px;
+    color: rgb(0, 0, 0);
+    background-color: #b6e0f0;
+    font-size: 14px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#pr5-2:hover{
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+#pr6-1 {
+    width: 150px;
+    color: white;
+    background-color: rgb(23, 89, 233);
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+    .products {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products img {
+        width: 100%;
+    }
+
+    .products .pr1-caption, .products .pr2-caption, .products .pr3-caption, .products .pr4-caption, .products .pr5-caption, .products .pr6-caption {
+        width: 100%;
+        margin-top: 7%;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .products .pr1-subcaption, .products .pr2-subcaption, .products .pr3-subcaption, .products .pr5-subcaption, .products .pr6-subcaption {
+        width: 100%;
+        margin-top: 17%;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .products .pr4-supersubcaption {
+        margin-top: 18%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .products .pr4-subcaption {
+        margin-top: 23%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .products .pr3-supersubcaption {
+        width: 100%;
+        margin-top: 23%;
+        text-align: center;
+    }
+
+    .products .pr1-buttons, .products .pr2-buttons, .products .pr5-buttons, .products .pr6-buttons {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-top: 25%;
+    }
+
+    .products .pr3-buttons, .products .pr4-buttons {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30%;
+    }
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 20px;
+}
+
+.footer-caption {
+    width: 70%;
+    text-align: left;
+    font-size: 12px; 
+    margin-bottom: 20px; 
+    margin-left: 240px;
+    color: rgb(63, 63, 63);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap; 
+    border-bottom: 1px solid rgb(182, 182, 182);
+    border-top: 1px solid rgb(182, 182, 182);
+}
+
+.footer-column {
+    width: 15%;
+}
+
+.footer-column h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-top: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #666;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom a {
+    color: #0070c9;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-caption {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .footer h3 {
+        font-size: 10px;
+    }
+}
+
+/* Existing styles remain the same */
+
+/* Tablet-specific media query */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Navbar adjustments */
+    .navbar {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    /* Main slide adjustments */
+    #the-relay {
+        font-size: 50px;
+        margin-top: 10vw;
+    }
+
+    .sub-relay {
+        font-size: 22px;
+        margin-top: 18vw;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #watch-the-film {
+        left: 40%;
+        top: 35%;
+    }
+
+    /* iPhone section adjustments */
+    #heading-15 {
+        left: 30%;
+        font-size: 50px;
+    }
+
+    .sub-info-15 {
+        left: 25%;
+        font-size: 22px;
+    }
+
+    .iphone-buttons {
+        left: 35%;
+    }
+
+    /* Products grid adjustments */
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .products img {
+        width: 100%;
+        height: auto;
+    }
+
+    .products .pr1-caption, .pr2-caption, .pr3-caption, .pr4-caption, .pr5-caption, .pr6-caption {
+        width: 100%;
+        font-size: 45px;
+    }
+
+    .products .pr1-subcaption, .pr2-subcaption, .pr3-subcaption, .pr4-subcaption, .pr5-subcaption, .pr6-subcaption {
+        width: 100%;
+        font-size: 20px;
+        margin-top: 70px;
+    }
+
+    .products .pr1-buttons, .pr2-buttons, .pr3-buttons, .pr4-buttons, .pr5-buttons, .pr6-buttons {
+        width: 100%;
+        margin-top: 120px;
+    }
+
+    /* Footer adjustments */
+    .footer-caption {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .footer-container {
+        justify-content: space-around;
+    }
+
+    .footer-column {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+}
