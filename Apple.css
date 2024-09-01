@@ -550,26 +550,26 @@
 
     .products .pr1-subcaption, .products .pr2-subcaption, .products .pr3-subcaption, .products .pr5-subcaption, .products .pr6-subcaption {
         width: 100%;
-        margin-top: 17%;
+        margin-top: 20%;
         font-size: 18px;
         text-align: center;
     }
 
     .products .pr4-supersubcaption {
-        margin-top: 18%;
+        margin-top: 20%;
         width: 100%;
         text-align: center;
     }
 
     .products .pr4-subcaption {
-        margin-top: 23%;
+        margin-top: 26%;
         width: 100%;
         text-align: center;
     }
 
     .products .pr3-supersubcaption {
         width: 100%;
-        margin-top: 23%;
+        margin-top: 26%;
         text-align: center;
     }
 
@@ -578,7 +578,7 @@
         width: 100%;
         justify-content: center;
         text-align: center;
-        margin-top: 25%;
+        margin-top: 27%;
     }
 
     .products .pr3-buttons, .products .pr4-buttons {
@@ -586,7 +586,7 @@
         width: 100%;
         justify-content: center;
         text-align: center;
-        margin-top: 30%;
+        margin-top: 32%;
     }
 }
 
